@@ -1,11 +1,13 @@
 const path = require('path')
 const products = require('./src/data/Products')
+const navigation = require('./src/data/Navigation')
 
 module.exports = {
   siteMetadata: {
     title: `Printing | CJ Trading & Signs | Springs`,
     description: `Fulfil your printing needs`,
-    products: products
+    products: products,
+    navigation: navigation,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

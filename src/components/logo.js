@@ -6,7 +6,7 @@ import "./logo.css"
 const Logo = () => (
   <span className="logo">
     <Link to="/">
-      <Image src="logo.png" />
+      <Image src="logo.png" height="60px" />
     </Link>
   </span>
 )

@@ -1,10 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { FaEllipsisV } from 'react-icons/fa'
 import "./menu.css"
 
-const Menu = () => (
-  <span className="menu">
-   ... 
+const Menu = ({ active, onClick }) => (
+  <span 
+    className={`menu ${active ? "active" : ""}`}
+    onClick={onClick.bind(this)}>
+   <FaEllipsisV />
   </span>
 )
 
