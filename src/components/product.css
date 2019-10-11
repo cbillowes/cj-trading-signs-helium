@@ -1,0 +1,18 @@
+.product {
+  width: 300px;
+  margin: 0 1em 1.5em 0;
+  border-radius: 10px;
+  border: solid 1px #ccc;
+  box-shadow: #ccc 2px 2px 8px;
+  overflow: hidden;
+}
+
+.product h1 {
+  font-size: 2.5em;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.product p {
+  padding: 1rem 1rem 0 1rem;
+}
+

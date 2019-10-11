@@ -1,0 +1,32 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .products {
+    width: 1400;
+  }
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1399px) {
+  .products {
+    width: 1050px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1049px) {
+  .products {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .products {
+    width: 350px;
+  }
+}
