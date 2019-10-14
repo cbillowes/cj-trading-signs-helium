@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const CopiesPage = () => (
+const MugsPage = () => (
   <Layout>
     <SEO title={`Mugs, Plates, Shirts & Caps`} />
     <h1>Mugs, Plates, Shirts &amp; Caps</h1>
@@ -30,4 +30,4 @@ const CopiesPage = () => (
   </Layout>
 )
 
-export default CopiesPage
+export default MugsPage

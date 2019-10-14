@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const CopiesPage = () => (
+const VinylPage = () => (
   <Layout>
     <SEO title={`Vinyl Stickers & Safety Signs`} />
     <h1>Vinyl Stickers &amp; Safety Signs</h1>
@@ -38,4 +38,4 @@ const CopiesPage = () => (
   </Layout>
 )
 
-export default CopiesPage
+export default VinylPage
