@@ -1,14 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
-import Image from "./image"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import "./logo.css"
 
-const Logo = () => (
-  <span className="logo">
-    <Link to="/">
-      <Image src="logo.png" height="60px" />
-    </Link>
-  </span>
-)
+const Logo = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const image = data.placeholderImage.childImageSharp.fluid
+  return (
+    <span className="logo">
+      <Link to="/">
+        <Img fluid={image} />
+      </Link>
+    </span>
+  )
+}
 
 export default Logo
