@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, qraphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Product from "./product"
 import "./products.css"
 
