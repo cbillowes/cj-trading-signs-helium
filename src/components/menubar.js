@@ -8,7 +8,7 @@ class Menubar extends Component {
     super(props)
 
     const windowContext = this.getWindowContext(
-      (window) ? window : props.window
+      (props !== undefined || props.window) ? props.window : window
     )
     const pathSegment = this.getPathSegment(
       windowContext
