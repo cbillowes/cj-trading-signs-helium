@@ -1,0 +1,60 @@
+.pricing .products,
+.pricing .product,
+.pricing .category,
+.pricing .product-name,
+.pricing .prices {
+  font-weight:bold;
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+}
+
+.pricing .products {
+  padding: 0;
+}
+
+.pricing .prices {
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.pricing .prices li {
+  margin: .25rem 0 
+}
+
+.pricing .product {
+  background-color: #38b6ff;
+  color: #1e5d81;
+  text-shadow: 1px 1px 1px #80d0ff;
+}
+
+.pricing .category {
+  background-color: #fcff38;
+  color: #959724;
+  text-shadow: 1px 1px 1px #feffb9;
+}
+
+.pricing .product-name {
+  background-color: #ff388b;
+  color: #7e2148;
+  text-shadow: 1px 1px 1px #fb9bc3;
+}
+
+.pricing .prices .qty {
+  width: 150px;
+  display: inline-block;
+  text-align: right;
+  background-color: #ccc;
+  padding: .5rem;
+} 
+
+.pricing .prices .price {
+  padding-left: 1rem;
+}
