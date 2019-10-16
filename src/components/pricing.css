@@ -1,57 +1,46 @@
 .pricing .products,
 .pricing .product,
-.pricing .category,
-.pricing .product-name,
 .pricing .prices {
-  font-weight:bold;
-  padding: 1rem;
-  margin: 0;
+  display: block;
+  font-weight: bold;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  border: none;
   list-style: none;
   width: 100%;
-  box-shadow: none;
-  border-radius: 0;
-  display: block;
-}
-
-.pricing .products {
-  padding: 0;
-}
-
-.pricing .prices {
-  width: 100%;
-  max-width: 100%;
-  text-align: left;
   margin: 0;
-  padding: 0;
 }
 
-.pricing .prices li {
-  margin: .25rem 0 
+.pricing .category,
+.pricing .disclaimer,
+.pricing .product,
+.pricing .product-name,
+.pricing .prices {
+  margin: 0;
+  padding: .5rem 1.25rem;
+}
+
+.pricing .product-name,
+.pricing .disclaimer {
+  padding-left: 0;
 }
 
 .pricing .product {
   background-color: #38b6ff;
   color: #1e5d81;
-  text-shadow: 1px 1px 1px #80d0ff;
+  text-shadow: 1px 1px 1px #80d0ff; 
 }
 
 .pricing .category {
-  background-color: #fcff38;
-  color: #959724;
-  text-shadow: 1px 1px 1px #feffb9;
-}
-
-.pricing .product-name {
-  background-color: #ff388b;
-  color: #7e2148;
-  text-shadow: 1px 1px 1px #fb9bc3;
+  background-color: #303030;
+  color: #ccc;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .pricing .prices .qty {
   width: 150px;
   display: inline-block;
   text-align: right;
-  background-color: #ccc;
   padding: .5rem;
 } 
 

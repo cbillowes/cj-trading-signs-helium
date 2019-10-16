@@ -23,6 +23,7 @@ const Pricing = ({ data: pricing }) => {
                 {d.products.map(p => {
                   let idx = 0
                   let category = <></>
+                  let disclaimer = <></>
                   if (d.category) {
                     category = (
                       <li key={_.kebabCase(d.category)} className="category">
@@ -30,10 +31,16 @@ const Pricing = ({ data: pricing }) => {
                       </li>
                     )
                   }
+                  if (pricing.disclaimer) {
+                    disclaimer = (
+                      <li key={_.kebabCase(`disclaimer ${idx}`)} className="disclaimer">{pricing.disclaimer}</li>
+                    )
+                  }
                   return (
                     <>
                       <li className="product">{pricing.category}</li>
                       {category}
+                      {disclaimer}
                       <li className="product-name">
                         {`${p.name} (${pricing.breakdown})`}
                       </li>

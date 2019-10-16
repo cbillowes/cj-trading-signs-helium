@@ -1,7 +1,7 @@
 module.exports = [
   {
     url: "/",
-    name: "Home",
+    name: "Products",
   },
   {
     url: "/copies",
