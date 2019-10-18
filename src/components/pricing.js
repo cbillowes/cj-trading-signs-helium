@@ -53,7 +53,7 @@ const Pricing = ({ data: pricing }) => {
                                   {pricing.descriptions[idx++]}
                                 </span>
                                 <span className="price">
-                                  {formatter.format(p)}
+                                  {(p >= 0) ? formatter.format(p) : "N/A"}
                                 </span>
                               </li>
                             )
