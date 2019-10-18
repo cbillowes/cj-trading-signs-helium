@@ -7,11 +7,9 @@ class Menubar extends Component {
   constructor(props) {
     super(props)
 
-    const windowContext = this.getWindowContext(
-      (props !== undefined || props.window) ? props.window : window
-    )
+    const windowContext = this.getWindowContext(props)
     const pathSegment = this.getPathSegment(
-      windowContext
+      this.getPathname(windowContext)
     )
     this.state = {
       navigation: props.navigation,
@@ -20,22 +18,29 @@ class Menubar extends Component {
     }
   }
 
-  getWindowContext = (window) => {
-    const defaultWindow = {
-      location: {
-        pathname: "/",
+  getWindowContext = (props) => {
+    const custom = (props.window) 
+      ? props.window
+      : {
+        location: {
+          pathname : "/"
+        }
       }
-    }
-    return (window) ? window : defaultWindow
+    return (typeof window === "undefined") ? custom : window
   }
 
-  getPathSegment = (windowContext) => {
-     const path = windowContext.location.pathname
-     if (path !== "/") {
-       const pathSegments = path.split("/")
+  getPathname = (context) => {
+    return (typeof context.location === "undefined") 
+      ? "/" 
+      : context.location.pathname
+  }
+
+  getPathSegment = (pathname) => {
+     if (pathname !== "/") {
+       const pathSegments = pathname.split("/")
        return `/${pathSegments[1]}`
      }
-     return path
+     return pathname
   }
 
   isSelected = (url) => {
