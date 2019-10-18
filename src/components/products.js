@@ -8,6 +8,7 @@ const getImageNodes = (data, src) => {
     const fixed = n.node.fixed
     if (fixed.originalName === src)
       return fixed 
+    return {}
   })
   const valid = images.filter(value => value !== undefined && Object.keys(value).length !== 0)
   return valid
