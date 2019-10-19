@@ -1,18 +1,19 @@
 .bar {
-  background-color: #101010;
-  color: #ccc;
-  text-shadow: 1px 1px 1px #000;
+  border-top: solid .5rem #38b6ff;
+  background-color: #0d2d3f;
+  color: #f1f1f1;
   padding: 1rem;
+}
+
+.bar .wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .bar .contact {
-  font-weight: bold;
-  display: none;
-}
-
-.bar .address {
   display: none;
 }
 
@@ -20,7 +21,7 @@
   font-size: 2rem;
   display: inline-block;
   padding: 1rem;
-  color: #ccc;
+  color: #f1f1f1;
 }
 
 .bar .icon.facebook:hover {
@@ -41,4 +42,19 @@
 
 .bar .icon.email:hover {
   color: #A5282C;
+}
+
+@media screen and (min-width: 640px) {
+  .bar .wrapper {
+    justify-content: space-between;
+  }
+
+  .bar .contact {
+    display: block;
+  }
+
+  .bar .person {
+    font-weight: bold;
+    display: inline-block;
+  }
 }

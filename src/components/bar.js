@@ -40,23 +40,29 @@ const Bar = () => {
 
   return (
     <div className="bar">
-      <span className="contact">{person}</span>
-      <span className="address">{address}</span>
-      <Anchor url={facebook} className="icon facebook">
-        <FaFacebook />
-      </Anchor>
-      <Anchor url={"tel:" + whatsapp} className="icon whatsapp">
-        <FaWhatsapp />
-      </Anchor>
-      <Anchor url={"tel:" + mobile} className="icon mobile">
-        <FaMobileAlt />
-      </Anchor>
-      <Anchor url={website} className="icon url">
-        <FaLink />
-      </Anchor>
-      <Anchor url={"mailto:" + email} className="icon email">
-        <FaEnvelope />
-      </Anchor>
+      <div className="wrapper">
+        <div class="contact">
+          <div className="person">{person}</div>
+          <div className="address">{address}</div>
+        </div>
+        <div className="icons">
+          <Anchor url={facebook} className="icon facebook">
+            <FaFacebook />
+          </Anchor>
+          <Anchor url={"tel:" + whatsapp} className="icon whatsapp">
+            <FaWhatsapp />
+          </Anchor>
+          <Anchor url={"tel:" + mobile} className="icon mobile">
+            <FaMobileAlt />
+          </Anchor>
+          <Anchor url={website} className="icon url">
+            <FaLink />
+          </Anchor>
+          <Anchor url={"mailto:" + email} className="icon email">
+            <FaEnvelope />
+          </Anchor>
+        </div>
+      </div>
     </div>
   )
 }
