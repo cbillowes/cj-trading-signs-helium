@@ -1,0 +1,44 @@
+.bar {
+  background-color: #101010;
+  color: #ccc;
+  text-shadow: 1px 1px 1px #000;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.bar .contact {
+  font-weight: bold;
+  display: none;
+}
+
+.bar .address {
+  display: none;
+}
+
+.bar .icon {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #ccc;
+}
+
+.bar .icon.facebook:hover {
+  color: #4267B2;
+}
+
+.bar .icon.whatsapp:hover {
+  color: #4AC959;
+}
+
+.bar .icon.mobile:hover {
+  color: #5EB0E5;
+}
+
+.bar .icon.url:hover {
+  color: #F3D060;
+}
+
+.bar .icon.email:hover {
+  color: #A5282C;
+}

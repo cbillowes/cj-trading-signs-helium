@@ -6,6 +6,15 @@ module.exports = {
   siteMetadata: {
     title: `Printing | CJ Trading & Signs | Springs`,
     description: `Fulfil your printing needs`,
+    contact: {
+      person: "Carol McAughey",
+      address: "1859 Grootvlei Res Estate, Strubenvale Ext 2, Springs, Gauteng",
+      facebook: "https://www.facebook.com/CJ.McAughey/",
+      whatsapp: "+27672594314",
+      mobile: "+27672594314",
+      website: "https://www.cj-trading-signs.com",
+      email: "mailto:cj.trading.signs@gmail.com",
+    },
     products: products,
     navigation: navigation,
   },

@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Bar from "./bar"
 import Logo from "./logo"
 import Menu from "./menu"
 import Menubar from "./menubar"
@@ -8,27 +9,33 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      menuOpen: false,
+      menuOpen: false
     }
   }
 
   toggleMenuOpen = () => {
     this.setState({
-      menuOpen: !this.state.menuOpen,
+      menuOpen: !this.state.menuOpen
     })
   }
 
   render() {
     return (
       <>
+        <Bar 
+          person={"person"}
+          address={"address"}
+          facebook={"facebook"} 
+          whatsapp={"whatsapp"}
+          mobile={"mobile"}
+          website={"website"}
+          email={"email"}
+        />
         <header className="header">
           <Logo />
-          <Menu
-            onClick={this.toggleMenuOpen}
-            active={this.state.menuOpen} />
+          <Menu onClick={this.toggleMenuOpen} active={this.state.menuOpen} />
         </header>
-        <Menubar
-          opened={this.state.menuOpen} />
+        <Menubar opened={this.state.menuOpen} />
       </>
     )
   }
