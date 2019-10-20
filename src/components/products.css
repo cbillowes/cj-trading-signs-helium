@@ -7,9 +7,9 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .products {
-    width: 1400;
+    width: 1300px;
   }
 }
 

@@ -5,6 +5,7 @@
   border: solid 1px #ccc;
   box-shadow: #ccc 2px 2px 8px;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .product h1 {

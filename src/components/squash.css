@@ -1,0 +1,16 @@
+.squash {
+  background-color: #fff;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 3rem 3rem 3rem;
+  border-top: none;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 1rem;
+}
+
+.squash > div {
+  max-width: 960px;
+  border-radius: 1rem;
+  background-color: #fff; 
+  padding: 1rem;
+}

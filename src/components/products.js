@@ -6,11 +6,12 @@ import "./products.css"
 const getImageNodes = (data, src) => {
   const images = data.allImageSharp.edges.map(n => {
     const fixed = n.node.fixed
-    if (fixed.originalName === src)
-      return fixed 
+    if (fixed.originalName === src) return fixed
     return {}
   })
-  const valid = images.filter(value => value !== undefined && Object.keys(value).length !== 0)
+  const valid = images.filter(
+    value => value !== undefined && Object.keys(value).length !== 0
+  )
   return valid
 }
 
@@ -32,16 +33,11 @@ const Products = ({ collection }) => {
   const products = collection.map(p => {
     const fixedImage = getImageNodes(data, p.image)[0]
     return (
-      <Product 
-        name={p.name} 
-        image={fixedImage} 
-        description={p.description} />
+      <Product name={p.name} image={fixedImage} description={p.description} />
     )
   })
 
-  return (
-    <div className="products">{products}</div>
-  )
+  return <div className="products">{products}</div>
 }
 
 export default Products

@@ -22,18 +22,20 @@ class Header extends Component {
   render() {
     return (
       <>
-        <Bar 
+        <Bar
           person={"person"}
           address={"address"}
-          facebook={"facebook"} 
+          facebook={"facebook"}
           whatsapp={"whatsapp"}
           mobile={"mobile"}
           website={"website"}
           email={"email"}
         />
         <header className="header">
-          <Logo />
-          <Menu onClick={this.toggleMenuOpen} active={this.state.menuOpen} />
+          <div className="wrapper">
+            <Logo />
+            <Menu onClick={this.toggleMenuOpen} active={this.state.menuOpen} />
+          </div>
         </header>
         <Menubar opened={this.state.menuOpen} />
       </>

@@ -1,13 +1,12 @@
 .header {
-  display: flex;
-  max-width: 1350px;
-  margin: 0 auto;
-  padding: 2rem 0;
-  justify-content: space-around;
+  background-color: #fff;
 }
 
-@media screen and (min-width: 640px) {
-  .header {
-    justify-content: space-between;
-  }
+.header .wrapper {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  justify-content: space-between;
+  background-color: #fff; 
 }

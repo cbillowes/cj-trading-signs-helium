@@ -2,7 +2,7 @@
   border-top: solid .5rem #38b6ff;
   background-color: #0d2d3f;
   color: #f1f1f1;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .bar .wrapper {
@@ -11,6 +11,7 @@
   align-items: center;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 3rem;
 }
 
 .bar .contact {

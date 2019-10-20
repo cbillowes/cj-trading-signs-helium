@@ -1,9 +1,12 @@
 import React from "react"
+import "./squash.css"
 
 const Squash = ({ children }) => {
   return (
-    <div style={{ maxWidth: "640px", margin: "0 auto" }}>
-      {children}
+    <div className="squash">
+      <div>
+        {children}
+      </div>
     </div>
   )
 }
