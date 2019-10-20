@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
@@ -9,27 +10,41 @@ const MugsPage = () => (
     <Squash>
       <h1>Mugs, Plates, Shirts &amp; Caps</h1>
       <p>
-        We can print your personalised designs on Shirts, Puzzles,Mugs, Plates,
-        Golf Caps. Aprons, etc.
+        We print on shirts, puzzles, mugs, plates, golf caps, aprons and more.
+        What you print is totally up to you.
       </p>
-      <p>
-        Come to CJ Trading &amp; Signs where we are in a security boom
-        controlled Estate with parking on the premises.
-      </p>
-      <ul>
-        <li>What is printed is totally up to you.</li>
-        <li>
-          Ideas can be to print a photo, your company branding, a logo or your
-          slogan.
+      <ul className="boxes">
+        <li className="c">
+          <strong>Options.</strong>
+          <br />
+          Shirts, puzzles, mugs, plates, golf caps, aprons, you name it.{" "}
+          <Link to="/contact">Contact us</Link> to get more options.
         </li>
-        <li>
+        <li className="y">
+          <strong>Imagine.</strong>
+          <br />
+          What is printed is totally up to you.
+        </li>
+        <li className="m">
+          <strong>Ideas.</strong>
+          <br />A photo, your company branding, a logo or your slogan.
+        </li>
+        <li className="k">
+          <strong>Caps.</strong>
+          <br />
           Caps you can choose between full colour transfers or max 3 colour heat
-          applied vinyl.{" "}
+          applied vinyl.
         </li>
-        <li>
+        <li className="k">
+          <strong>Puzzles.</strong>
+          <br />
           Puzzles are personalised but only in A4 with big or small pieces.
         </li>
-        <li>High Visibility vests, branded with designation and names.</li>
+        <li className="m">
+          <strong>High visibility vests.</strong>
+          <br />
+          High visibility vests, branded with designation and names.
+        </li>
       </ul>
     </Squash>
   </Layout>

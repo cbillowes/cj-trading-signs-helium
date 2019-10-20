@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
+import "./boxes.css"
 
 const CopiesPage = () => (
   <Layout>
@@ -9,25 +10,49 @@ const CopiesPage = () => (
     <Squash>
       <h1>Copies &amp; Printing</h1>
       <p>
-        There are so many people who do not need to own a computer, colour
-        printer, copier or laminator because they hardly ever need to use one,
-        but when the need arises where do you go?
+        We can type, scan, copy, print and laminate documents for you in black &amp;
+        white and in colour, single sided and double up to A4.
       </p>
       <p>
-        Come to CJ Trading &amp; Signs where we are in a security boom
-        controlled Estate with parking on the premises.
+        We operate in a security boom controlled Estate with parking on premises.
       </p>
-      <ul>
-        <li>
-          Type out your Documents that are emailed, on memory stick or even
-          neatly &amp; clearly hand written (obviously we must be able to read
-          it easily). Type your CV.
+      <ul className="boxes">
+        <li className="c">
+          <strong>Convenient.</strong><br/>
+          You don't need to own a computer, printer, copier or laminator.
         </li>
-        <li>Make photocopies in B/W or full colour.</li>
-        <li>Scan and email documents for you.</li>
-        <li>Single &amp; double sided scanning and printing.</li>
-        <li>Laminate your valuable documents.</li>
-        <li>All only up to A4.</li>
+        <li className="y">
+          <strong>We can type for you.</strong><br/>
+          Send us a document by email, memory stick or neatly written document.
+        </li>
+        <li className="m">
+          <strong>Think professional.</strong><br/>
+          We can type out, print or email a copy of your CV for you.
+        </li>
+        <li className="k">
+          <strong>Want some copies?</strong><br/>
+          Make photocopies in black &amp; white or full colour.
+        </li>
+        <li className="k">
+          <strong>Get your documents.</strong><br/>
+          Let us scan your documents for you. We can email and print them out.
+        </li>
+        <li className="m">
+          <strong>Print it out.</strong><br/>
+          We can scan and print out single &amp; double sided for you.
+        </li>
+        <li className="y">
+          <strong>Protect your documents.</strong><br/>
+          Laminate your valuable documents.
+        </li>
+        <li className="c">
+          <strong>Collect your documents.</strong><br/>
+          We are in a security boom controlled Estate with parking on the premises.
+        </li>
+        <li className="y">
+          <strong>Current limitations.</strong><br/>
+          Right now we only scan and print up to A4 sizes.
+        </li>
       </ul>
     </Squash>
   </Layout>

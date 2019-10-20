@@ -1,0 +1,39 @@
+.boxes {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: stretch;
+}
+
+.boxes li {
+  padding: 1rem;
+  width: 280px;
+  margin: 0 15px 15px 0;
+}
+
+.boxes .c {
+  background-color: #38b6ff;
+  color: #1e5d81;
+}
+
+.boxes .y {
+  background-color: #fcff38;;
+  color: #959724;
+}
+
+.boxes .m {
+  background-color: #ff388b;
+  color: #7e2148;
+}
+
+.boxes .k {
+  background-color: #6b6b6b;
+  color: #202020
+}
+
+@media screen and (max-width: 960px) {
+  .boxes li {
+    width: 100%;
+  }
+}
