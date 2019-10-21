@@ -3,6 +3,7 @@
   position: absolute;
   z-index: 1;
   background-color: white;
+  margin-top: 18px;
 }
 
 .menubar ul {
@@ -26,7 +27,7 @@
 .menubar .menuitem a {
   display: block;
   text-align: right;
-  padding: .5rem 2rem;
+  padding: 1rem 5rem;
   text-decoration: none;
   font-weight: bold;
   margin: 0;

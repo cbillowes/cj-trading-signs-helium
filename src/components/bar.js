@@ -1,70 +1,38 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import {
-  FaFacebook,
-  FaWhatsapp,
-  FaLink,
-  FaMobileAlt,
-  FaEnvelope
-} from "react-icons/fa"
-import Anchor from "./anchor"
+import React, { Component } from "react"
+import Contact from "./contact"
+import SocialMedia from "./social-media"
+import Menu from "./menu"
+import Menubar from "./menubar"
 import "./bar.css"
 
-const Bar = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          contact {
-            person
-            address
-            facebook
-            whatsapp
-            mobile
-            website
-            email
-          }
-        }
-      }
+class Bar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false
     }
-  `)
-  const {
-    person,
-    address,
-    facebook,
-    whatsapp,
-    mobile,
-    website,
-    email
-  } = data.site.siteMetadata.contact
+  }
 
-  return (
-    <div className="bar">
-      <div className="wrapper">
-        <div class="contact">
-          <div className="person">{person}</div>
-          <div className="address">{address}</div>
+  toggleMenuOpen = () => {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
+  }
+
+  render() {
+    return (
+      <div className="bar">
+        <div className="wrapper">
+          <Contact />
+          <div className="icons">
+            <SocialMedia />
+            <Menu className="icon" onClick={this.toggleMenuOpen} active={this.state.menuOpen} />
+          </div>
         </div>
-        <div className="icons">
-          <Anchor url={facebook} className="icon facebook">
-            <FaFacebook />
-          </Anchor>
-          <Anchor url={"tel:" + whatsapp} className="icon whatsapp">
-            <FaWhatsapp />
-          </Anchor>
-          <Anchor url={"tel:" + mobile} className="icon mobile">
-            <FaMobileAlt />
-          </Anchor>
-          <Anchor url={website} className="icon url">
-            <FaLink />
-          </Anchor>
-          <Anchor url={"mailto:" + email} className="icon email">
-            <FaEnvelope />
-          </Anchor>
-        </div>
+        <Menubar opened={this.state.menuOpen} />
       </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default Bar

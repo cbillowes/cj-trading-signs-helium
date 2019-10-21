@@ -32,7 +32,7 @@ class Menubar extends Component {
 
   render() {
     return (
-      <header className={`menubar ${this.props.opened ? "opened" : "closed"}`}>
+      <nav className={`menubar ${this.props.opened ? "opened" : "closed"}`}>
         <ul>
           {this.state.navigation.map(item => {
             return (
@@ -47,7 +47,7 @@ class Menubar extends Component {
             )
           })}
         </ul>
-      </header>
+      </nav>
     )
   }
 }

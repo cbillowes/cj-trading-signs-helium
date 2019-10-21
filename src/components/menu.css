@@ -1,24 +1,16 @@
 .menu {
-  margin-right: 2rem;
-  color: #0d2d3f;
-  border-radius: 10px;
-  font-size: 2.5rem;
   cursor: pointer;
-  padding: .5rem;
-  height: 65px;
+  border-radius: 50%;
 }
 
 .menu:hover {
-  color: #38b6ff;
-  background-color: #f1f1f1;
+  background-color: #ff388b;
 }
 
 .menu.active {
-  color: #0d2d3f;
-  background-color: #f1f1f1;
+  background-color: #38b6ff;
 }
 
 .menu.active:hover {
-  color: #ff388b;
-  background-color: #f1f1f1;
+  background-color: #ff388b;
 }
