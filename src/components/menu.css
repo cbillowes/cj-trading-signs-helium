@@ -5,16 +5,20 @@
   font-size: 2.5rem;
   cursor: pointer;
   padding: .5rem;
+  height: 65px;
 }
 
 .menu:hover {
-  background-color: #f3f3f3;
+  color: #38b6ff;
+  background-color: #f1f1f1;
 }
 
 .menu.active {
-  background-color: #f3f3f3;
+  color: #0d2d3f;
+  background-color: #f1f1f1;
 }
 
 .menu.active:hover {
-  background-color: #f3f3f3;
+  color: #ff388b;
+  background-color: #f1f1f1;
 }
