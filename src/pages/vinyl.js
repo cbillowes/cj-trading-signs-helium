@@ -8,25 +8,37 @@ const VinylPage = () => (
     <SEO title={`Vinyl Stickers & Safety Signs`} />
     <Squash>
       <h1>Vinyl Stickers &amp; Safety Signs</h1>
-      <ul>
-        <li>We stock 3 and 8 year Vinyl.</li>
-        <li>3 Year used mainly for indoors or short term outdoors.</li>
-        <li>8 Year Vinyl for use outdoors.</li>
-        <li>A wide variety of colours available.</li>
-        <li>Frosted Glass and clear also available.</li>
-        <li>
-          Design colours are limited as each colour must be cut separately the
+      <ul className="boxes">
+        <li className="c">
+          <strong>Stock.</strong><br/>
+          We stock 3 and 8 year Vinyl.
+        </li>
+        <li className="y">
+          <strong>Usage.</strong><br/>
+          3 year vinyl is used mainly for indoors or short term outdoors.
+          8 year vinyl is used for outdoors.
+        </li>
+        <li className="m">
+          <strong>Variety.</strong><br/>
+          A wide variety of vinyl colours &amp; clear and frosted glass is available.
+        </li>
+        <li className="k">
+          <strong>Limitations.</strong><br/>
+          Design colours are limited as each colour must be cut separately then
           assembled.
         </li>
-        <li>
+        <li className="c">
+          <strong>Long term options.</strong><br/>
           Long term Signs can be mounted on ABS plastic, Chromadek, or Aluminium
           boards.
         </li>
-        <li>
+        <li className="y">
+          <strong>Short term options.</strong><br/>
           Short term signs on Masonite, corrugated cardboard or corrugated
           plastic.
         </li>
-        <li>
+        <li className="m">
+          <strong>Ideas.</strong><br/>
           From Toilet signage to advertising your sales prices to bumper
           stickers.
         </li>
@@ -35,7 +47,7 @@ const VinylPage = () => (
       <p>ABS, Chromadek, Aluminium, corrugated plastic or board</p>
       <ul>
         <li>Sublimation on Aluminium</li>
-        <li>All safety signage.</li>
+        <li>All safety signage</li>
         <li>All informative signage</li>
       </ul>
     </Squash>
