@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Header from "./header"
+import Footer from "./footer"
+import Main from "./main"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -9,31 +11,20 @@ const Layout = ({ children }) => {
     query {
       placeholderImage: file(relativePath: { eq: "cymk.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
+          fixed(quality: 85, height: 600) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
-  console.log(data)
   return (
     <>
       <Header />
-      <div
-        className="main background"
-        style={{
-          backgroundImage: `url(${data.placeholderImage.childImageSharp.fluid.src})`
-        }}
-      >
-        <div className="main wrapper">
-          <main>{children}</main>
-          <footer>
-            &copy; {new Date().getFullYear()} CJ Trading &amp; Signs
-            {` `}
-          </footer>
-        </div>
-      </div>
+      <Main
+        children={children} 
+        background={data.placeholderImage.childImageSharp.fixed.src} /> 
+      <Footer />
     </>
   )
 }
