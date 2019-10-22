@@ -1,5 +1,8 @@
 .header {
   background-color: #fff;
+  box-shadow: 
+    inset 0px 11px 8px -10px #303030,
+    inset 0px -11px 8px -10px #303030; 
 }
 
 .header .wrapper {
