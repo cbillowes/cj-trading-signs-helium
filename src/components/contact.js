@@ -18,7 +18,7 @@ const Contact = () => {
   const { person, address } = data.site.siteMetadata.contact
 
   return (
-    <div class="contact">
+    <div className="contact">
       <div className="person">{person}</div>
       <div className="address">{address}</div>
     </div>

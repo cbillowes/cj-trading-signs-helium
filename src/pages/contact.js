@@ -9,11 +9,11 @@ const ContactPage = () => (
     <Squash>
       <h1>Contact Us</h1>
       <ul>
-        <li class="whatsapp">067 259 4314</li>
-        <li class="mobile">067 259 4314</li>
-        <li class="email">cj.trading.signs@gmail.com</li>
-        <li class="website">www.cj-trading-signs.com</li>
-        <li class="facebook">
+        <li className="whatsapp">067 259 4314</li>
+        <li className="mobile">067 259 4314</li>
+        <li className="email">cj.trading.signs@gmail.com</li>
+        <li className="website">www.cj-trading-signs.com</li>
+        <li className="facebook">
           <a href="https://www.facebook.com/CJ.McAughey/?eid=ARBGrQnsG6W76wyaBwuCPbK_DVtFonPCAx9Odej8ZcBw_RogbTIdzTIhHkQ_8ZZXOMHvHwDyQhJzsS3K">
             Facebook
           </a>
