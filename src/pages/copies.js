@@ -33,23 +33,23 @@ const CopiesPage = () => (
           <strong>Want some copies?</strong><br/>
           Make photocopies in black &amp; white or full colour.
         </li>
-        <li className="k">
+        <li className="c">
           <strong>Get your documents.</strong><br/>
           Let us scan your documents for you. We can email and print them out.
         </li>
-        <li className="m">
+        <li className="y">
           <strong>Print it out.</strong><br/>
           We can scan and print out single &amp; double sided for you.
         </li>
-        <li className="y">
+        <li className="m">
           <strong>Protect your documents.</strong><br/>
           Laminate your valuable documents.
         </li>
-        <li className="c">
+        <li className="k">
           <strong>Collect your documents.</strong><br/>
           We are in a security boom controlled Estate with parking on the premises.
         </li>
-        <li className="y">
+        <li className="c">
           <strong>Current limitations.</strong><br/>
           Right now we only scan and print up to A4 sizes.
         </li>

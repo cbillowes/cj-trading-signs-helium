@@ -31,20 +31,20 @@ const CardsPage = () => (
           <strong>Density.</strong><br/>
           80 or 160 gram.
         </li>
-        <li className="k">
+        <li className="c">
           <strong>Folding.</strong><br/>
           Half (A5) or Quarter (A6) folding.
         </li>
-        <li className="m">
+        <li className="y">
           <strong>Layout.</strong><br/>
           Portrait (tall) or Landscape (wide).
         </li>
-        <li className="y">
+        <li className="m">
           <strong>Ideas.</strong><br/>
           Cards and invites for all occasions.
           Any theme from Kiddies to Adult.
         </li>
-        <li className="c">
+        <li className="k">
           <strong>Personalised.</strong><br/>
           Make your card personal, from the heart or downright funny using your
           favourite jokes.

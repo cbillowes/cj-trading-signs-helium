@@ -35,12 +35,12 @@ const MugsPage = () => (
           Caps you can choose between full colour transfers or max 3 colour heat
           applied vinyl.
         </li>
-        <li className="k">
+        <li className="c">
           <strong>Puzzles.</strong>
           <br />
           Puzzles are personalised but only in A4 with big or small pieces.
         </li>
-        <li className="m">
+        <li className="y">
           <strong>High visibility vests.</strong>
           <br />
           High visibility vests, branded with designation and names.
