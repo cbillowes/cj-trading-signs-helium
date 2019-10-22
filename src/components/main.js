@@ -1,13 +1,24 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import "./main.css"
 
-const Main = ({ background, children }) => {
-  console.log(background)
+const Main = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "cymk.jpg" }) {
+        childImageSharp {
+          fixed(quality: 85, height: 600) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
   return (
     <div
       className="main background"
       style={{
-        backgroundImage: `url(${background})`
+        backgroundImage: `url(${data.placeholderImage.childImageSharp.fixed.src})`
       }}
     >
       <div className="main wrapper">
