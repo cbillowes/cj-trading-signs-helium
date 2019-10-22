@@ -8,5 +8,8 @@
   margin: 0 auto;
   padding: 2rem 3rem;
   justify-content: space-between;
-  background-color: #fff; 
+  background-color: #fff;
+  box-shadow: 
+    inset 0px 11px 8px -10px #303030,
+    inset 0px -11px 8px -10px #303030; 
 }
