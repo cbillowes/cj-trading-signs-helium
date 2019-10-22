@@ -12,22 +12,31 @@
   margin: 0 15px 15px 0;
 }
 
-.boxes .c {
+.boxes a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.boxes .c,
+.boxes .c a {
   background-color: #38b6ff;
   color: #1e5d81;
 }
 
-.boxes .y {
+.boxes .y,
+.boxes .y a {
   background-color: #fcff38;;
   color: #959724;
 }
 
-.boxes .m {
+.boxes .m,
+.boxes .m a {
   background-color: #ff388b;
   color: #7e2148;
 }
 
-.boxes .k {
+.boxes .k,
+.boxes .k a {
   background-color: #6b6b6b;
   color: #202020
 }
