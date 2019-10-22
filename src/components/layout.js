@@ -7,12 +7,12 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="sticky">
       <Header />
       <Main
         children={children} /> 
       <Footer />
-    </>
+    </div>
   )
 }
 

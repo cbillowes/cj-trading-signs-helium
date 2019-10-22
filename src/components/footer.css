@@ -2,4 +2,6 @@
   background-color: #000;
   padding: 3rem;
   color: #fff;
+
+  flex: 1;
 }

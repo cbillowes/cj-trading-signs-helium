@@ -1,11 +1,12 @@
 .main.background {
   background-attachment: fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
+
 .main.wrapper {
   margin: 0 auto;
   max-width: 1440px;
   padding: 0px 1.0875rem 1.45rem;
-  height: 100%;
   padding: 3rem 0;
 }
