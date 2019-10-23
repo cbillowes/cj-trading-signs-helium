@@ -4,14 +4,20 @@ import Squash from "../components/squash"
 import SEO from "../components/seo"
 import "./boxes.css"
 
+const title = `Copies & Printing`
+const description = `We type, scan, copy, print and laminate documents for you in 
+black & white and in colour, single sided and double up to A4.`
+
 const CopiesPage = () => (
   <Layout>
-    <SEO title={`Copies & Printing`} />
+    <SEO 
+      title={title}
+      description={description} 
+    />
     <Squash>
-      <h1>Copies &amp; Printing</h1>
+      <h1>{title}</h1>
       <p>
-        We can type, scan, copy, print and laminate documents for you in black &amp;
-        white and in colour, single sided and double up to A4.
+        {description}
       </p>
       <p>
         We operate in a security boom controlled Estate with parking on premises.

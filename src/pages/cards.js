@@ -4,15 +4,21 @@ import Squash from "../components/squash"
 import SEO from "../components/seo"
 import "./boxes.css"
 
+const title = `Custom Cards & Invites`
+const description = `Do you remember when you could pop in to a shop and 
+buy a pack of party invites and special occasion cards? Now you can create 
+your own personalised cards.`
+
 const CardsPage = () => (
   <Layout>
-    <SEO title={`Custom Cards & Invites`} />
+    <SEO 
+      title={title}
+      description={description} 
+    />
     <Squash>
-      <h1>Custom Cards &amp; Invites</h1>
+      <h1>{title}</h1>
       <p>
-        Do you remember when you could pop in to a shop and buy a pack of party
-        invites and special occasion cards? Now you can create your own 
-        personalised cards.
+        {description}
       </p>
       <ul className="boxes">
         <li className="c">

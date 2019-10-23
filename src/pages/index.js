@@ -4,6 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Products from "../components/products"
 
+const title = `Products`
+const description = `We fulfil your printing needs.
+Personalised mugs, cups, caps, puzzles, lighters, clocks, shirts, 
+coasters, plates, mouse pads, stickers, safety signs and more.`
+
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -18,10 +23,12 @@ const IndexPage = () => {
       }
     }
   `)
-
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO 
+        title={title}
+        description={description}
+      />
       <Products collection={data.site.siteMetadata.products} />
     </Layout> 
   )

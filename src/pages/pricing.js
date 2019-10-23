@@ -7,11 +7,20 @@ import Pricing from "../components/pricing"
 import printing from "../data/Pricing/Printing"
 import heat from "../data/Pricing/Heat"
 
+const title = `Pricing`
+const description = `Think copies, printing, lamination, emailing, typing,
+design and vinyl heat transfers.`
 const PricingPage = () => (
   <Layout>
-    <SEO title={`Pricing`} />
+    <SEO 
+      title={title} 
+      description={description}
+    />
     <Squash>
-      <h1>Pricing</h1>
+      <h1>{title}</h1>
+      <p>
+        {description}
+      </p>
       <p>
         We cannot print directly onto Vinyl or Embroidery yet. We will find the
         best deal for you through outsourcing.

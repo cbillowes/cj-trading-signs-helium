@@ -4,14 +4,20 @@ import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
 
+const title = `Mugs, Plates, Shirts & Caps`
+const description = `We print on shirts, puzzles, mugs, plates, golf caps, 
+aprons and more. What you print is totally up to you.`
+
 const MugsPage = () => (
   <Layout>
-    <SEO title={`Mugs, Plates, Shirts & Caps`} />
+    <SEO 
+      title={title}
+      description={description} 
+    />
     <Squash>
-      <h1>Mugs, Plates, Shirts &amp; Caps</h1>
+      <h1>{title}</h1>
       <p>
-        We print on shirts, puzzles, mugs, plates, golf caps, aprons and more.
-        What you print is totally up to you.
+        {description}
       </p>
       <ul className="boxes">
         <li className="c">

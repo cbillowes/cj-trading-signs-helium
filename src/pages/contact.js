@@ -3,11 +3,20 @@ import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
 
+const title = `Contact Us`
+const description = `Call us or get in touch on Whatsapp, email and on facebook. 
+Support us by sharing our website.`
 const ContactPage = () => (
   <Layout>
-    <SEO title={`Contact Us`} />
+    <SEO 
+      title={title} 
+      description={description}
+    />
     <Squash>
-      <h1>Contact Us</h1>
+      <h1>{title}</h1>
+      <p>
+        {description}
+      </p>
       <ul className="boxes">
         <li className="c">
           <strong>Call or Whatsapp us.</strong><br/>

@@ -3,11 +3,22 @@ import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
 
+const title = `Vinyl Stickers & Safety Signs`
+const description = `We stock 3 and 8 year vinyl with a variety of colours
+which can be used from toilet signage to advertising your sales prices and
+bumper stickers. The vinyl we use is OSH compliant.`
+
 const VinylPage = () => (
   <Layout>
-    <SEO title={`Vinyl Stickers & Safety Signs`} />
+    <SEO 
+      title={title} 
+      description={description}
+    />
     <Squash>
-      <h1>Vinyl Stickers &amp; Safety Signs</h1>
+      <h1>{title}</h1>
+      <p>
+        {description}
+      </p>
       <ul className="boxes">
         <li className="c">
           <strong>Stock.</strong><br/>

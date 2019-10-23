@@ -2,7 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
+import Squash from "../components/squash"
 import SEO from "../components/seo"
+
+const title = `BEE Status`
+const description = `We are a registered Level Four company operating in a 
+security boom controlled Estate with parking on the premises.`
 
 const BeePage = () => {
   const data = useStaticQuery(graphql`
@@ -20,9 +25,17 @@ const BeePage = () => {
   const image = data.placeholderImage.childImageSharp.fluid
   return (
     <Layout>
-      <SEO title={`BEE Status`} />
-      <h1>BEE Status</h1>
-      <Img fluid={image} />
+      <Squash>
+        <SEO 
+          title={title} 
+          description={description} 
+        />
+        <h1>BEE Status</h1>
+        <p>
+          {description}
+        </p>
+        <Img fluid={image} />
+      </Squash>
     </Layout>
   )
 }
