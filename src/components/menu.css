@@ -1,6 +1,7 @@
 .menu {
   cursor: pointer;
   border-radius: 50%;
+  background-color: #091e2b;
 }
 
 .menu:hover {
