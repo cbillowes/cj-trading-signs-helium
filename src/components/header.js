@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Bar from "./bar"
 import Logo from "./logo"
+import Slogan from "./slogan"
 import "./header.css"
 
 class Header extends Component {
@@ -11,6 +12,7 @@ class Header extends Component {
         <header className="header">
           <div className="wrapper">
             <Logo />
+            <Slogan />
           </div>
         </header>
       </>

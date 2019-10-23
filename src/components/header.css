@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 2rem 3rem;
   justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   box-shadow: 
     inset 0px 11px 8px -10px #303030,

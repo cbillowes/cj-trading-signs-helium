@@ -1,0 +1,22 @@
+.slogan {
+  text-align: right;
+}
+
+.slogan .heading {
+  font-weight: bold;
+  display: block;
+}
+
+.slogan .details {
+  display: inline-block;
+  max-width: 550px;
+}
+
+@media screen and (max-width: 840px) {
+  .slogan {
+    max-width: 150px;
+  }
+  .slogan .details {
+    display: none;
+  }
+}
