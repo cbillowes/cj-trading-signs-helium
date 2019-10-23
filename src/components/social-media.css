@@ -1,15 +1,15 @@
-.facebook:hover {
+.icon.facebook:hover {
   color: #4267B2;
 }
 
-.whatsapp:hover {
+.icon.whatsapp:hover {
   color: #4AC959;
 }
 
-.mobile:hover {
+.icon.mobile:hover {
   color: #5EB0E5;
 }
 
-.email:hover {
+.icon.email:hover {
   color: #CC0000;
 }
