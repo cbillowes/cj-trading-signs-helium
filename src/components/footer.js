@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import Menubar from "./menubar"
 import "./footer.css"
 
 class Footer extends Component {
@@ -9,6 +10,7 @@ class Footer extends Component {
       {` `}
       &#x1f5a8;
       We fulfil your printing needs
+      <Menubar opened={true} />
     </footer>
     )
   }

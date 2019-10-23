@@ -2,6 +2,45 @@
   background-color: #000;
   padding: 3rem;
   color: #fff;
-
   flex: 1;
+}
+
+.footer .menubar .menuitem:first-child {
+  padding-left: 0;
+}
+
+.footer .menubar .menuitem {
+  display: inline-block;
+}
+
+.footer .menubar .menuitem a::after {
+  content: " | ";
+  color: #303030;
+  padding: 0 .25rem;
+}
+
+.footer .menubar .menuitem a {
+  padding: 0;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.footer .menubar {
+  background-color: transparent;
+  position: relative;
+}
+
+.footer .menubar .menuitem a:hover,
+.footer .menubar .menuitem a.selected:hover {
+  color: #38b6ff;
+}
+
+.footer .menubar .menuitem a.selected {
+  color: #fbe300;
+  background-color: transparent;
 }
