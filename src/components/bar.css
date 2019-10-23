@@ -3,6 +3,12 @@
   background-color: #0d2d3f;
   color: #f1f1f1;
   padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 117px;
+  z-index: 1;
 }
 
 .bar .wrapper {
