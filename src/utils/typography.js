@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "Amatic SC",
+    "Nanum Pen Script",
     "cursive"
   ],
   bodyFontFamily: ["Open Sans", "sans-serif"]

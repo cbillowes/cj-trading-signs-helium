@@ -64,7 +64,7 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Open+Sans&display=swap" rel="stylesheet"/>
+      <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans&display=swap" rel="stylesheet"/>
     </Helmet>
   )
 }
