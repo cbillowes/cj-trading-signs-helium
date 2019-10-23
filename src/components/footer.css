@@ -11,12 +11,7 @@
 
 .footer .menubar .menuitem {
   display: inline-block;
-}
-
-.footer .menubar .menuitem a::after {
-  content: " | ";
-  color: #303030;
-  padding: 0 .25rem;
+  padding-right: 1rem;
 }
 
 .footer .menubar .menuitem a {
