@@ -36,33 +36,33 @@
 }
 
 .menubar .menuitem a:hover {
-  background-color: #333;
-  color: #ccc;
+  background-color: #0d2d3f;
+  color: #fff;
 }
 
 .menubar .menuitem a.selected {
-  background-color: #38b6ff;
-  color: #1e5d81;
+  background-color: #38b6ff ;
+  color: #000;
 }
 
 .menubar .menuitem:nth-child(2n) a.selected {
-  background-color: #fcff38;
-  color: #959724;
+  background-color: #fbe300;
+  color: #000;
 }
 
 .menubar .menuitem:nth-child(3n) a.selected {
-  background-color: #ff388b;
-  color: #7e2148;
+  background-color: #f908ab;
+  color: #000;
 }
 
 .menubar .menuitem:nth-child(4n) a.selected {
-  background-color: #6b6b6b;
-  color: #202020;
+  background-color: #000;
+  color: #fff;
 }
 
 .menubar .menuitem a.selected:hover {
-  background-color: #333;
-  color: #ccc;
+  background-color: #0d2d3f;
+  color: #fff;
 }
 
 .menubar ul {
