@@ -22,7 +22,7 @@
 
 .pricing .product-name,
 .pricing .disclaimer {
-  padding-left: 0;
+  background-color: #fbe300;
 }
 
 .pricing .product {
