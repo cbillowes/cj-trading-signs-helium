@@ -32,3 +32,10 @@
     justify-content: space-between;
   }
 }
+
+@media screen and (max-width: 999px) {
+  .bar .wrapper {
+    text-align: right;
+    display: block;
+  }
+} 

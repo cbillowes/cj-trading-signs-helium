@@ -41,7 +41,7 @@ class Menubar extends Component {
                   className={`${this.isSelected(item.url) ? "selected" : ""}`}
                   to={item.url}
                 >
-                  {item.name}
+                  <span>{item.name}</span>
                 </Link>
               </li>
             )
