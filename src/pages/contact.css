@@ -1,0 +1,8 @@
+.contact-details .contact {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.contact-details .person {
+  font-weight: bold;
+}

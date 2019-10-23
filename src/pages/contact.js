@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
+import Contact from "../components/contact"
+import "./contact.css"
 
 const title = `Contact Us`
 const description = `Call us or get in touch on Whatsapp, email and on facebook. 
@@ -17,6 +19,9 @@ const ContactPage = () => (
       <p>
         {description}
       </p>
+      <div className="contact-details">
+        <Contact />
+      </div>
       <ul className="boxes">
         <li className="c">
           <strong>Call or Whatsapp us.</strong><br/>
