@@ -11,7 +11,7 @@
 
 .footer .menubar .menuitem {
   display: inline-block;
-  padding-right: 1rem;
+  padding-right: .5rem;
 }
 
 .footer .menubar .menuitem a {
@@ -23,6 +23,13 @@
   z-index: 1;
   margin-top: 0;
   font-weight: normal;
+  text-align: left;
+  border-right: dashed 1px #606060;
+  padding-right: .5rem;
+}
+
+.footer .menubar .menuitem a span {
+  padding: 0;
 }
 
 .footer .menubar {
@@ -30,12 +37,41 @@
   position: relative;
 }
 
+.footer .menubar .menuitem.selected {
+  background-color: transparent;
+}
+
 .footer .menubar .menuitem a:hover,
 .footer .menubar .menuitem a.selected:hover {
   color: #38b6ff;
+  background-color: transparent;
 }
 
 .footer .menubar .menuitem a.selected {
+  color: #fff;
+  font-weight: bold;
+}
+
+,footer .menubar .menuitem a.selected:hover,
+.footer .menubar .menuitem a:hover {
+  color: #909090;
+}
+
+.footer .menubar .menuitem a.selected {
+  color: #38b6ff;
+}
+
+.footer .menubar .menuitem:nth-child(2n) a.selected {
   color: #fbe300;
+  background-color: transparent;
+}
+
+.footer .menubar .menuitem:nth-child(3n) a.selected {
+  color: #f908ab;
+  background-color: transparent;
+}
+
+.footer .menubar .menuitem:nth-child(4n) a.selected {
+  color: #606060;
   background-color: transparent;
 }
