@@ -5,6 +5,7 @@ const navigation = require('./src/data/Navigation')
 module.exports = {
   siteMetadata: {
     title: `Printing | CJ Trading & Signs | Springs`,
+    shortTitle: `CJ Trading & Signs`,
     description: `Fulfil your printing needs`,
     contact: {
       person: "Carol McAughey",
