@@ -17,6 +17,7 @@ const IndexPage = () => {
           products {
             name
             image
+            orientation
             description
           }
         }

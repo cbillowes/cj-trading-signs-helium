@@ -8,6 +8,7 @@ module.exports = [
   {
     name: "Mouse Pads",
     image: "mousepads.png",
+    orientation: "landscape",
     description:
       "Print your custom designs on foam mouse pads. Ideas include your company logo, details, advertising, kiddies and adult themes."
   },
@@ -20,6 +21,7 @@ module.exports = [
   {
     name: "Heat Change Mugs",
     image: "mugs-heat.png",
+    orientation: "landscape",
     description: "Heat makes the colour disappear, printing in the same colour makes messages only appear when the mug is hot and disappear when cold."
   },
   {
@@ -44,6 +46,7 @@ module.exports = [
   {
     name: "Plates and Stands",
     image: "plates.png",
+    orientation: "landscape",
     description:
       "Make a memory plate reminding you of a special occasion, wedding, anniversaries, holiday destinations. Essentially anything can be printed on your plate."
   },
@@ -85,6 +88,7 @@ module.exports = [
   {
     name: "Puzzles",
     image: "puzzles-rect.png",
+    orientation: "landscape",
     description:
       "We offer small and large piece puzzles. Printing ideas include photos of your children, pets, places your children have visited, vehicles, special occasions or comic designs."
   },

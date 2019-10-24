@@ -3,7 +3,7 @@ import React from "react"
 import Img from "gatsby-image"
 import "./product.css"
 
-const Product = ({ name, image, description }) => {
+const Product = ({ name, image, orientation, description }) => {
   return (
     <div 
       id={_.kebabCase(name)}
@@ -12,6 +12,7 @@ const Product = ({ name, image, description }) => {
       <h1>{name}</h1>
       <Img 
         key={_.kebabCase(`product img ${name}`)} 
+        className={orientation}
         fixed={image} />
       <p>{description}</p>
     </div>

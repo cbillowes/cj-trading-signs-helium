@@ -33,7 +33,12 @@ const Products = ({ collection }) => {
   const products = collection.map(p => {
     const fixedImage = getImageNodes(data, p.image)[0]
     return (
-      <Product name={p.name} image={fixedImage} description={p.description} />
+      <Product 
+        name={p.name} 
+        image={fixedImage} 
+        orientation={p.orientation} 
+        description={p.description} 
+      />
     )
   })
 
