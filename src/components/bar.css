@@ -37,5 +37,11 @@
   .bar .wrapper {
     text-align: right;
     display: block;
+    padding-left: 0;
+    min-width: 360px;
+  }
+
+  .bar .icon {
+    font-size: 1.85rem;
   }
 } 
