@@ -2,8 +2,7 @@
   margin-top: 117px;
   background-color: #fff;
   box-shadow: 
-    inset 0px 11px 8px -10px #303030,
-    inset 0px -11px 8px -10px #303030; 
+    inset 0px -11px 8px -10px #ccc; 
 }
 
 .header .wrapper {
@@ -15,6 +14,5 @@
   align-items: center;
   background-color: #fff;
   box-shadow: 
-    inset 0px 11px 8px -10px #303030,
-    inset 0px -11px 8px -10px #303030; 
+    inset 0px -11px 8px -10px #ccc; 
 }
