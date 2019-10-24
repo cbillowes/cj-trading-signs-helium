@@ -60,7 +60,7 @@ module.exports = [
     ]
   },
   {
-    category: "Design",
+    category: "Creative Design",
     breakdown: "Price per hour",
     descriptions: ["1 to 10", "11 to 50", "51+"],
     products: [

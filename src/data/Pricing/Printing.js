@@ -68,7 +68,7 @@ module.exports = [
     ]
   },
   {
-    category: "Emailing",
+    category: "Emailing printed documents",
     breakdown: "Price per page",
     descriptions: ["Email", "1 to 49 (per page)", "50 to 100 (per page)"],
     products: [
@@ -87,7 +87,7 @@ module.exports = [
     ]
   },
   {
-    category: "Typing",
+    category: "Typing printed documents",
     breakdown: "Price per page",
     descriptions: ["1 to 19", "20 to 49", "50 to 100"],
     products: [
@@ -109,7 +109,7 @@ module.exports = [
     ]
   },
   {
-    category: "Design",
+    category: "Print Design",
     breakdown: "Price per hour",
     descriptions: ["1 to 10", "11 to 50", "51+"],
     products: [

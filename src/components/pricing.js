@@ -7,10 +7,15 @@ const formatter = new Intl.NumberFormat("en-ZA", {
   currency: "ZAR"
 })
 
-const Pricing = ({ data: pricing }) => {
+const Pricing = ({ heading, pricing, show }) => {
   let productIdx = 0
+  if (!show) return <></>
   return (
-    <section className="pricing">
+    <section
+      id={_.kebabCase(pricing.category)} 
+      className="pricing"
+    >
+      <h2>{heading}</h2>
       <div>
         {pricing.products.map(d => {
           let pricingIdx = 0
@@ -38,7 +43,9 @@ const Pricing = ({ data: pricing }) => {
                   }
                   return (
                     <>
-                      <li className="product">{pricing.category}</li>
+                      <li className="product">
+                        {pricing.category}
+                      </li>
                       {category}
                       {disclaimer}
                       <li className="product-name">
