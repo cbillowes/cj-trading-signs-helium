@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `CJ Trading & Signs`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#38b6ff`,
