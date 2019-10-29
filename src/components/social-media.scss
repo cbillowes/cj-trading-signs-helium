@@ -1,0 +1,14 @@
+.icon {
+  &.facebook:hover {
+    color: #4267b2;
+  }
+  &.whatsapp:hover {
+    color: #4ac959;
+  }
+  &.mobile:hover {
+    color: #5eb0e5;
+  }
+  &.email:hover {
+    color: #cc0000;
+  }
+}
