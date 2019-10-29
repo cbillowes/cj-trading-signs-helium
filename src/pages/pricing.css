@@ -1,0 +1,4 @@
+.dropdown,
+.dropdown-item {
+  z-index: 2;
+}

@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import Pricing from "../components/pricing"
 import printing from "../data/Pricing/Printing"
 import heat from "../data/Pricing/Heat"
+import "./pricing.css"
 
 const title = `Pricing`
 const description = `Think copies, printing, lamination, emailing, typing,
@@ -19,10 +20,6 @@ const options = pricing.map(p => {
     label: p.category,
   }
 })
-
-const logChange = (val) => {
-  console.log(val)
-}
 
 class PricingPage extends Component {
   constructor(props) {
@@ -63,6 +60,7 @@ class PricingPage extends Component {
 
             <nav className="dropdown" role="navigation">
               <Select 
+                className="dropdown-item"
                 options={options}
                 onChange={this.toggleCategory}
               />
