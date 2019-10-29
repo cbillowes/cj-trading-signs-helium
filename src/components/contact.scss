@@ -1,0 +1,14 @@
+.contact {
+  display: none;
+
+  @media screen and (min-width: 1000px) {
+    & {
+      display: block;
+    }
+
+    .person {
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+}

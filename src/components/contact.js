@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import "./contact.css"
+import "./contact.scss"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
