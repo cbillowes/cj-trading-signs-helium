@@ -1,5 +1,5 @@
 import React from "react"
-import "./squash.css"
+import "./squash.scss"
 
 const Squash = ({ children }) => {
   return (
