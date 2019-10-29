@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
-import "./boxes.css"
+import "./boxes.scss"
 
 const title = `Custom Cards & Invites`
 const description = `Do you remember when you could pop in to a shop and 

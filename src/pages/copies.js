@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
-import "./boxes.css"
+import "./boxes.scss"
 
 const title = `Copies & Printing`
 const description = `We type, scan, copy, print and laminate documents for you in 

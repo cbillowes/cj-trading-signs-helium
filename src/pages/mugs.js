@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
+import "./boxes.scss"
 
 const title = `Mugs, Plates, Shirts & Caps`
 const description = `We print on shirts, puzzles, mugs, plates, golf caps, 

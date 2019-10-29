@@ -1,0 +1,49 @@
+.boxes {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: stretch;
+
+  li {
+    padding: 1rem;
+    width: 280px;
+    margin: 0 15px 15px 0;
+
+    @media screen and (max-width: 960px) {
+      & {
+        width: 100%;
+      }
+    }
+  }
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 2rem;
+  }
+
+  .c,
+  .c a {
+    background-color: #07aaf8;
+    color: #fff;
+  }
+
+  .y,
+  .y a {
+    background-color: #fbe300;
+    color: #000;
+  }
+
+  .m,
+  .m a {
+    background-color: #f908ab;
+    color: #fff;
+  }
+
+  .k,
+  .k a {
+    background-color: #000;
+    color: #fff;
+  }
+}

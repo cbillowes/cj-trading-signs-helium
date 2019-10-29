@@ -4,6 +4,7 @@ import Squash from "../components/squash"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
 import "./contact.css"
+import "./boxes.scss"
 
 const title = `Contact Us`
 const description = `Call us or get in touch on Whatsapp, email and on facebook. 

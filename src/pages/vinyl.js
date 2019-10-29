@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
+import "./boxes.scss"
 
 const title = `Vinyl Stickers & Safety Signs`
 const description = `We stock 3 and 8 year vinyl with a variety of colours
