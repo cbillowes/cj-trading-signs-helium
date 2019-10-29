@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Pricing from "../components/pricing"
 import printing from "../data/Pricing/Printing"
 import heat from "../data/Pricing/Heat"
-import "./pricing.css"
+import "./pricing.scss"
 
 const title = `Pricing`
 const description = `Think copies, printing, lamination, emailing, typing,
