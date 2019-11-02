@@ -27,6 +27,63 @@
   color: #f1f1f1;
 }
 
+.menubar {
+  z-index: 1;
+  background-color: #fff;
+  margin: 115px 0 0 0;
+  overflow-x: scroll;
+  position: fixed;
+  top: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &.opened {
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &.closed {
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .menuitem {
+    border-bottom: solid 1px #ccc;
+
+    a {
+      text-decoration: none;
+      color: #606060;
+      display: inline-block;
+      padding: 0.85rem 1.5rem;
+      width: 100%;
+    }
+
+    &.c a:hover,
+    &.c a.selected {
+      background-color: #38b6ff;
+      color: #fff;
+    }
+
+    &.y a:hover,
+    &.y a.selected {
+      background-color: #fbe300;
+    }
+
+    &.m a:hover,
+    &.m a.selected {
+      background-color: #f908ab;
+      color: #fff;
+    }
+
+    &.k a:hover,
+    &.k a.selected {
+      background-color: #303030;
+      color: #fff;
+    }
+  }
+}
+
 @media screen and (min-width: 640px) {
   .bar .wrapper {
     justify-content: space-between;
@@ -34,44 +91,28 @@
 }
 
 @media screen and (max-width: 999px) {
-  .bar .wrapper {
-    text-align: right;
-    display: block;
-    padding-left: 0;
-    min-width: 360px;
-  }
+  .bar {
+    position: absolute;
 
-  .bar .icon {
-    font-size: 1.85rem;
-  }
-}
+    .wrapper {
+      text-align: right;
+      display: block;
+      padding-left: 0;
+      min-width: 360px;
+    }
 
-.menubar {
-  z-index: 1;
-  background-color: #fff;
-  margin: 18px 0 0 0;
-  overflow-x: scroll;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-
-  ul {
-    padding: 0;
-    margin: 0;
-
-    li {
-      list-style: none;
-      border-bottom: solid 1px #ccc;
-      margin: 0;
+    .icon {
+      font-size: 1.85rem;
     }
   }
 
-  .menuitem a {
-    text-decoration: none;
-    color: #606060;
-    display: inline-block;
-    padding: 0.85rem 1.5rem;
-    width: 100%;
+  .menubar {
+    position: absolute;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .bar, .menubar {
+    position: absolute;
   }
 }

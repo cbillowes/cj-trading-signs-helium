@@ -4,14 +4,15 @@
   color: #fff;
   line-height: 2rem;
 
-  ul {
+  .navigation {
     display: flex;
     flex-wrap: wrap;
     margin: .25rem 0 0 0;
 
-    li {
+    .menuitem {
       list-style: none;
       margin: 0;
+      display: inline;
 
       a {
         color: #fff;
@@ -41,7 +42,7 @@
 
       &.k a:hover,
       &.k a.selected {
-        color: #606060;
+        color: lighten(#303030, 20%);
       }
     }
   }

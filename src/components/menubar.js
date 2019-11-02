@@ -34,24 +34,26 @@ class Menubar extends Component {
     let idx = 0
 
     return (
-      <nav className={`${this.props.className} ${this.props.opened ? "opened" : "closed"}`}>
-        <ul>
-          {this.state.navigation.map(item => {
-            return (
-              <li 
-                key={_.kebabCase(item.name)} 
-                className={`menuitem ${styles[idx++%styles.length]}`}
+      <nav
+        className={`${this.props.className} ${
+          this.props.opened ? "opened" : "closed"
+        }`}
+      >
+        {this.state.navigation.map(item => {
+          return (
+            <div
+              key={_.kebabCase(item.name)}
+              className={`menuitem ${styles[idx++ % styles.length]}`}
+            >
+              <Link
+                className={`${this.isSelected(item.url) ? "selected" : ""}`}
+                to={item.url}
               >
-                <Link
-                  className={`${this.isSelected(item.url) ? "selected" : ""}`}
-                  to={item.url}
-                >
-                  <span>{item.name}</span>
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
+                <span>{item.name}</span>
+              </Link>
+            </div>
+          )
+        })}
       </nav>
     )
   }
@@ -71,10 +73,11 @@ export default ({ opened, onClick, className }) => {
     }
   `)
   return (
-    <Menubar 
-      opened={opened} 
+    <Menubar
+      opened={opened}
       toggle={onClick}
       className={className}
-      {...data.site.siteMetadata} />
+      {...data.site.siteMetadata}
+    />
   )
 }
