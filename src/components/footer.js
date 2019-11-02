@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Menubar from "./menubar"
-import "./footer.css"
+import "./footer.scss"
 
 class Footer extends Component {
   render() {
@@ -10,7 +10,10 @@ class Footer extends Component {
       {` `}
       &#x1f5a8;
       We fulfil your printing needs
-      <Menubar opened={true} />
+      <Menubar 
+        className="footer" 
+        opened={true} 
+      />
     </footer>
     )
   }

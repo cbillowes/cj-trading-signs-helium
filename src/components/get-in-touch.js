@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { FaFacebook, FaWhatsapp, FaMobileAlt, FaEnvelope } from "react-icons/fa"
 import Anchor from "./anchor"
-import "./social-media.scss"
+import "./get-in-touch.scss"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`

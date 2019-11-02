@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { window } from "browser-monads"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import _ from "lodash"
-import "./menubar.css"
 
 class Menubar extends Component {
   constructor(props) {
@@ -31,12 +30,18 @@ class Menubar extends Component {
   }
 
   render() {
+    const styles = ["c", "y", "m", "k"]
+    let idx = 0
+
     return (
-      <nav className={`menubar ${this.props.opened ? "opened" : "closed"}`}>
+      <nav className={`${this.props.className} ${this.props.opened ? "opened" : "closed"}`}>
         <ul>
           {this.state.navigation.map(item => {
             return (
-              <li key={_.kebabCase(item.name)} className="menuitem">
+              <li 
+                key={_.kebabCase(item.name)} 
+                className={`menuitem ${styles[idx++%styles.length]}`}
+              >
                 <Link
                   className={`${this.isSelected(item.url) ? "selected" : ""}`}
                   to={item.url}
@@ -52,7 +57,7 @@ class Menubar extends Component {
   }
 }
 
-export default ({ opened, onClick }) => {
+export default ({ opened, onClick, className }) => {
   const data = useStaticQuery(graphql`
     query NavigationQuery {
       site {
@@ -66,6 +71,10 @@ export default ({ opened, onClick }) => {
     }
   `)
   return (
-    <Menubar opened={opened} toggle={onClick} {...data.site.siteMetadata} />
+    <Menubar 
+      opened={opened} 
+      toggle={onClick}
+      className={className}
+      {...data.site.siteMetadata} />
   )
 }

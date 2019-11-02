@@ -1,9 +1,9 @@
 import React, { Component } from "react"
 import Contact from "./contact"
-import SocialMedia from "./social-media"
+import GetInTouch from "./get-in-touch"
 import Menu from "./menu"
 import Menubar from "./menubar"
-import "./bar.css"
+import "./bar.scss"
 
 class Bar extends Component {
   constructor(props) {
@@ -21,16 +21,24 @@ class Bar extends Component {
 
   render() {
     return (
-      <div className="bar">
-        <div className="wrapper">
-          <Contact />
-          <div className="icons">
-            <SocialMedia />
-            <Menu className="icon" onClick={this.toggleMenuOpen} active={this.state.menuOpen} />
+      <>
+        <div className="bar">
+          <div className="wrapper">
+            <Contact />
+            <div className="icons">
+              <GetInTouch />
+              <Menu 
+                className="icon" 
+                onClick={this.toggleMenuOpen} active={this.state.menuOpen} 
+              />
+            </div>
           </div>
         </div>
-        <Menubar opened={this.state.menuOpen} />
-      </div>
+        <Menubar 
+          className="menubar" 
+          opened={this.state.menuOpen} 
+        />
+      </>
     )
   }
 }
