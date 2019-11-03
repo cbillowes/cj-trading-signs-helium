@@ -1,0 +1,16 @@
+.contact-details {
+  .contact {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .person {
+    font-weight: bold;
+  }
+}
+
+.contact-methods {
+  a:hover {
+    font-weight: bold;
+  }
+}

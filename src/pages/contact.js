@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Squash from "../components/squash"
 import SEO from "../components/seo"
 import Contact from "../components/contact"
-import "./contact.css"
+import "./contact.scss"
 import "./boxes.scss"
 
 const title = `Contact Us`
@@ -23,7 +23,7 @@ const ContactPage = () => (
       <div className="contact-details">
         <Contact />
       </div>
-      <ul className="boxes">
+      <ul className="contact-methods boxes">
         <li className="c">
           <strong>Call or Whatsapp us.</strong><br/>
           <a href="tel:+27672594314">067 259 4314</a>
