@@ -15,16 +15,17 @@ const Main = ({ children }) => {
     }
   `)
   return (
-    <div
-      className="main background"
-      style={{
-        backgroundImage: `url(${data.placeholderImage.childImageSharp.fixed.src})`
-      }}
-    >
+    <>
+      <div
+        className="main background"
+        style={{
+          backgroundImage: `url(${data.placeholderImage.childImageSharp.fixed.src})`
+        }}
+      ></div>
       <div className="main wrapper">
         <main>{children}</main>
       </div>
-    </div>
+    </>
   )
 }
 
