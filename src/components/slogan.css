@@ -9,7 +9,7 @@
 
 .slogan .details {
   display: inline-block;
-  max-width: 550px;
+  max-width: 580px;
 }
 
 @media screen and (max-width: 840px) {

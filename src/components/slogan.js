@@ -16,7 +16,7 @@ class Header extends Component {
           <span
             className="details"
           >
-            Personalised mugs, cups, caps, puzzles, lighters, clocks, shirts,
+            With personalised mugs, cups, caps, puzzles, lighters, clocks, shirts,
             coasters, plates, mouse pads, stickers, safety signs and more.
           </span>
         </div>
