@@ -97,5 +97,11 @@ module.exports = [
     image: "puzzles.png",
     description:
       "We offer heart shaped puzzles essential for gifts and something different for kiddies. Printing ideas include photo of your children, pets, places your children have visited, vehicles, special occasions or comic designs."
+  },
+  {
+    name: "Edible Printing on Cakes",
+    image: "edible-printing.png",
+    description: 
+      "Edible ink printed on icing paper. Personalise cakes and cupcakes. Any photo printed on your special occasion cake. R75 per A4 sheet."
   }
 ]
